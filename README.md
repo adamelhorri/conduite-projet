@@ -1,4 +1,3 @@
-Voici un exemple de README pour le backend de votre projet SerenitySpaceAPI :
 
 # SerenitySpaceAPI
 
@@ -95,20 +94,9 @@ Ce backend offre une API RESTful qui prend en charge les fonctionnalités suivan
 3. Naviguez jusqu'au répertoire du projet dans votre terminal.
 4. Exécutez `dotnet run` pour démarrer le serveur de développement. 
 5. L'API sera accessible à l'adresse `http://localhost:5000/`.
+6. attention API vide à alimenter 
 
-## Contribution
 
-Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, veuillez suivre ces étapes :
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Create a new Pull Request
-
-## Support
-
-Si vous rencontrez des problèmes ou si vous avez des questions, n'hésitez pas à ouvrir une issue dans ce dépôt.
 
 ## Licence
 
@@ -116,4 +104,3 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ---
 
-Vous pouvez personnaliser ces informations selon vos besoins !
