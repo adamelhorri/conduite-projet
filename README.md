@@ -31,5 +31,3 @@ Si vous rencontrez des problèmes ou si vous avez des questions, n'hésitez pas 
 
 Le projet n'est sous aucune licence
 ---
-
-N'hésitez pas à personnaliser ces sections selon vos besoins !
