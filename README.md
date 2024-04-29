@@ -1,27 +1,110 @@
+Voici un exemple de README pour le backend de votre projet SerenitySpaceAPI :
 
-# Conduite du Projet - Interface Frontend de Serenity Space
+# SerenitySpaceAPI
 
-Ce projet est une interface frontend développée pour Serenity Space, une application de bien-être offrant une gamme de services, notamment l'analyse de données de montre connectée, des questionnaires sur le bien-être personnel, le calcul d'état mental, ainsi que des solutions de contenu audiovisuel comme de la musique zen et relaxante, des vidéos de méditation et des conférences sur le bien-être.
+Ce projet constitue le backend de Serenity Space, une application de bien-être offrant une gamme de services, y compris l'analyse de données de montre connectée, des questionnaires sur le bien-être personnel, le calcul d'état mental, ainsi que des solutions de contenu audiovisuel telles que de la musique zen et relaxante, des vidéos de méditation et des conférences sur le bien-être.
 
-## Description
+## Structure du Projet
 
-L'interface frontend de Serenity Space a été conçue pour offrir une expérience utilisateur immersive et conviviale, permettant aux utilisateurs d'accéder facilement aux différents services et contenus disponibles sur la plateforme.
+```
+SerenitySpaceAPI
+│   Admin.cs
+│   Answer.cs
+│   appsettings.Development.json
+│   appsettings.json
+│   CorsMiddleware.cs
+│   DistributionAPI.csproj
+│   DistributionAPI.csproj.user
+│   Program.cs
+│   Question.cs
+│   User.cs
+│   Video.cs
+│
+├───bin
+│   └───Debug
+│       └───net6.0
+│           │   appsettings.Development.json
+│           │   appsettings.json
+│           │   DistributionAPI.deps.json
+│           │   DistributionAPI.dll
+│           │   DistributionAPI.exe
+│           │   DistributionAPI.pdb
+│           │   DistributionAPI.runtimeconfig.json
+│           │   
+│           ├───runtimes
+│           │   ├───browser
+│           │   ├───unix
+│           │   │   └───lib
+│           │   │       └───netcoreapp2.1
+│           │   │       └───lib
+│           │   │       └───netcoreapp3.0
+│           │   │       └───lib
+│           │   │       └───netcoreapp3.1
+│           │   ├───win
+│           │   │   └───lib
+│           │   │       └───netcoreapp2.1
+│           │   │       └───lib
+│           │   │       └───netcoreapp3.0
+│           │   │       └───lib
+│           │   │       └───netcoreapp3.1
+│           │   │       └───lib
+│           │   └───win-arm
+│           │   └───win-arm64
+│           │   └───win-x64
+│           │   └───win-x86
+│           │       └───lib
+│           │           └───netcoreapp2.1
+│           │           └───lib
+│           │           └───netcoreapp3.0
+│           │           └───lib
+│           │           └───netcoreapp3.1
+│           └───native
+│               ├───Microsoft.Data.SqlClient.SNI.dll
+│               └───sni.dll
+├───Controllers
+│       AdminController.cs
+│       AnswerController.cs
+│       QuestionController.cs
+│       UserController.cs
+│       VideoController.cs
+├───Data
+│       DataContext.cs
+└───obj
+    ├───Debug
+    │   └───net6.0
+    │       ├───ref
+    │       ├───refint
+    │       └───staticwebassets
+    └───Release
+```
 
-## Technologies Utilisées
+## Fonctionnalités
 
-- Angular
-- ChatGPT-3
+Ce backend offre une API RESTful qui prend en charge les fonctionnalités suivantes :
 
-## Installation
+- Gestion des administrateurs (AdminController.cs)
+- Gestion des utilisateurs (UserController.cs)
+- Gestion des réponses aux questionnaires (AnswerController.cs)
+- Gestion des questions (QuestionController.cs)
+- Gestion des vidéos (VideoController.cs)
+
+## Installation et Exécution
 
 1. Clonez ce dépôt sur votre machine locale.
-2. Assurez-vous d'avoir Angular CLI installé localement.
+2. Assurez-vous d'avoir .NET Core SDK installé localement.
 3. Naviguez jusqu'au répertoire du projet dans votre terminal.
-4. Exécutez `npm install` pour installer les dépendances.
-5. Exécutez `ng serve` pour démarrer le serveur de développement. 
-6. Ouvrez votre navigateur et accédez à `http://localhost:4200/` pour voir l'application en action.
-7. Attention le code suivant va fonctionner seulement en front end , si vous voulez egalement utiliser le back-end sous .NET (branche back-end) il vous faut integrer les services de liaisons deja existants , egalement alimenter la base de données generée lors du lancement du backend 
+4. Exécutez `dotnet run` pour démarrer le serveur de développement. 
+5. L'API sera accessible à l'adresse `http://localhost:5000/`.
 
+## Contribution
+
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, veuillez suivre ces étapes :
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/improvement`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin feature/improvement`)
+5. Create a new Pull Request
 
 ## Support
 
@@ -29,7 +112,8 @@ Si vous rencontrez des problèmes ou si vous avez des questions, n'hésitez pas 
 
 ## Licence
 
-Le projet n'est sous aucune licence
+Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
+
 ---
 
-N'hésitez pas à personnaliser ces sections selon vos besoins !
+Vous pouvez personnaliser ces informations selon vos besoins !
