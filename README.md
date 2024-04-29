@@ -1,4 +1,3 @@
-Voici un exemple de README pour votre branche principale "conduite-projet" :
 
 # Conduite de Projet
 
