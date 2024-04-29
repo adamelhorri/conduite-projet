@@ -1,2 +1,4 @@
 # conduite-projet
-projet front end de conduite de projet
+projet Front-end Back_end conduite de projet
+## Backend branche Backend
+## Frontend branche Frontend
